@@ -1,0 +1,9 @@
+image: andreysenov/firebase-tools
+firebase_hosting_deploy:
+  script:
+    - firebase deploy --token "$FIREBASE_TOKEN" # deploy public directory
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
